@@ -1,0 +1,26 @@
+<style>
+    .container {width: 100%; margin: auto;}
+    @media(min-width:600px) {.container{width: 80%;}}
+    @media(min-width:768px) {.container{width: 60%;}}
+    @media(min-width:1024px) {.container{width: 50%;}}
+</style>
+
+<div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Taylor_Swift_%286966830273%29.jpg"
+     width="300" height="200">
+    <form action="/main" method="post">
+        <p><h2>Welcome to Hugging Face Ethical Test, my name is Thousand Ask. May I know your name? </h2></p>
+        <p><input type ="text" name="name"></p>
+        <p><input type="submit" value="Enter"></p>
+    </form>
+    <button onclick="joke1()">Joke 1</button>
+    <script>
+        function joke1(){
+            alert("How many Singaporeans does it take to change a light bulb?" +
+            "Just one, but two government departments to regulate the type of " +
+            "arguments and ensure it’s done in under five minutes!")
+        }
+    </script>
+    <p><button onclick="joke2()">Joke 2</button></p>
+    <script src="{{url_for('static',filename='joke2.js')}}"></script>
+</div>   
