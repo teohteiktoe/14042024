@@ -115,7 +115,7 @@ def dashboard():
 def update_metrics(n):
 
   conn = sqlite3.connect(
-      "/content/drive/MyDrive/Colab Notebooks/Practice/AN6802 AY2023/w1 Ethics Test w6 pre recording/w1 Ethics Test/log.db")
+      "log.db")
   cursor = conn.cursor()
   cursor.execute("SELECT COUNT(*) FROM employee")
   count = cursor.fetchone()[0]
